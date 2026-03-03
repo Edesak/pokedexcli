@@ -5,7 +5,8 @@ import (
 )
 
 func cleanInput(text string) []string {
-	cleanText := strings.TrimSpace(text)
-	splitText := strings.Split(cleanText, " ")
+	splitText := strings.Fields(text)
+	//This is the wrong way, but i keeping it here for looking at formating of unit test if failed
+	//splitText := strings.Split(text, " ")
 	return splitText
 }
